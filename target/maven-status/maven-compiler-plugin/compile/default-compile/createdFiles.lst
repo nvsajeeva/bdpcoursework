@@ -4,4 +4,5 @@ com/sajeeva/neighbourhood/NGroup.class
 com/sajeeva/availability/AllDay.class
 com/sajeeva/neighbourhood/NGroup$GetCountByGroup.class
 com/sajeeva/utils/cleanser.class
+com/sajeeva/Test.class
 com/sajeeva/availability/AllDay$IntSumReducer.class

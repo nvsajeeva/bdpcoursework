@@ -28,18 +28,12 @@ public class NGroup {
 
 
             String valueString = value.toString();
-            String group = valueString.split(",")[4];
+            String group = valueString.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)")[4];
             if (group == null) {
                 return;
             }
 
-//            group = group.replaceAll("'", "");
-//            StringTokenizer itr = new StringTokenizer(group);
-//            while (itr.hasMoreTokens()) {
-//                String mytoken = itr.nextToken();
-//                    word.set(mytoken);
-//                    context.write(word, one);
-//            }
+
             if(group.equals("neighbourhood_group")) {
                 return;
             }else {
