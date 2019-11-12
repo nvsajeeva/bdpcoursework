@@ -1,5 +1,6 @@
 package com.sajeeva.availability;
 
+import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -12,6 +13,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
 
 import java.io.IOException;
+import java.util.StringTokenizer;
 
 public class AllDay {
 
@@ -25,29 +27,24 @@ public class AllDay {
         public void map(Object key, Text value, Context context)
                 throws IOException, InterruptedException {
 
-//            Map<String, String> parsed = cleanser.CSVToMap(value
-//                    .toString());
-//
-//            String txt = parsed.get("availability");
-//
-//            if (txt == null) {
-//                return;
-//            }
-//
-//            txt = StringEscapeUtils.unescapeHtml(txt.toLowerCase());
-//
-//            txt = txt.replaceAll("'", "");
-//            txt = txt.replaceAll("[^a-zA-Z]", " ");
-//            StringTokenizer itr = new StringTokenizer(txt);
-//            while (itr.hasMoreTokens()) {
-//                word.set(itr.nextToken());
-//                context.write(word, one);
-//            }
 
             String valueString = value.toString();
-            String[] SingleCountryData = valueString.split(",");
-            word.set(SingleCountryData[15]);
-            context.write(word, one);
+            String numdays = valueString.split(",")[15];
+            if (numdays == null) {
+                return;
+            }
+            numdays = StringEscapeUtils.unescapeHtml(numdays.toLowerCase());
+
+            numdays = numdays.replaceAll("'", "");
+            StringTokenizer itr = new StringTokenizer(numdays);
+            while (itr.hasMoreTokens()) {
+                String mytoken = itr.nextToken();
+                if(mytoken.equals("365")) {
+                    word.set(mytoken);
+                    context.write(word, one);
+                }
+            }
+
         }
     }
 

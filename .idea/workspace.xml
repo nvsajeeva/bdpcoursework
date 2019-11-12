@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1277feae-fce1-48a1-98e9-4905953bc661" name="Default" comment="Count by number of days">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sajeeva/availability/AllDay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sajeeva/utils/cleanser.java" afterDir="false" />
+    <list default="true" id="1277feae-fce1-48a1-98e9-4905953bc661" name="Default" comment="NGroup Added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sajeeva/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sajeeva/availability/AllDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sajeeva/availability/AllDay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sajeeva/neighbourhood/NGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sajeeva/neighbourhood/NGroup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/bdp-coursework-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/bdp-coursework-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sajeeva/App.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sajeeva.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sajeeva.AppTest.xml" afterDir="false" />
@@ -37,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cleanser.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cleanser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sajeeva/utils/cleanser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+            <state relative-caret-position="390">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,8 +49,20 @@
       <file leaf-file-name="AllDay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sajeeva/availability/AllDay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+            <state relative-caret-position="599">
+              <caret line="85" column="5" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="85" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NGroup.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sajeeva/neighbourhood/NGroup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,9 +88,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/wordcount/count.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sajeeva/availability/AllDay.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sajeeva/utils/cleanser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sajeeva/wordcount/Count.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sajeeva/availability/AllDay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sajeeva/neighbourhood/NGroup.java" />
       </list>
     </option>
   </component>
@@ -155,6 +165,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sajeeva" type="462c0819:PsiDirectoryNode" />
               <item name="availability" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bdpcoursework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bdpcoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sajeeva" type="462c0819:PsiDirectoryNode" />
+              <item name="neighbourhood" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bdpcoursework" type="b2602c69:ProjectViewProjectNode" />
@@ -331,20 +350,27 @@
       <updated>1573404280926</updated>
       <workItem from="1573404286123" duration="857000" />
       <workItem from="1573405638447" duration="1057000" />
-      <workItem from="1573532541694" duration="13246000" />
+      <workItem from="1573532541694" duration="16981000" />
     </task>
+    <task id="LOCAL-00001" summary="Count by number of days">
+      <created>1573553657543</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573553657543</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15160000" />
+    <option name="totallyTimeSpent" value="18895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.29258516" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.29258516" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" />
@@ -357,7 +383,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -381,7 +407,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Count by number of days" />
-    <option name="LAST_COMMIT_MESSAGE" value="Count by number of days" />
+    <MESSAGE value="NGroup Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="NGroup Added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -428,16 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sajeeva/availability/AllDay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sajeeva/wordcount/Count.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -450,8 +467,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sajeeva/utils/cleanser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sajeeva/availability/AllDay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="85" column="5" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="85" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sajeeva/neighbourhood/NGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
