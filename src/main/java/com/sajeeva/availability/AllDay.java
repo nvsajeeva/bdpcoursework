@@ -1,6 +1,5 @@
 package com.sajeeva.availability;
 
-import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -13,7 +12,6 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
 
 import java.io.IOException;
-import java.util.StringTokenizer;
 
 public class AllDay {
 
@@ -29,21 +27,17 @@ public class AllDay {
 
 
             String valueString = value.toString();
-            String numdays = valueString.split(",")[15];
-            if (numdays == null) {
+            String numArray[] = valueString.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
+            if (numArray.length < 16) {
                 return;
             }
-            numdays = StringEscapeUtils.unescapeHtml(numdays.toLowerCase());
+            String numdays = numArray[15];
 
-            numdays = numdays.replaceAll("'", "");
-            StringTokenizer itr = new StringTokenizer(numdays);
-            while (itr.hasMoreTokens()) {
-                String mytoken = itr.nextToken();
-                if(mytoken.equals("365")) {
-                    word.set(mytoken);
+                if(numdays.equals("365")) {
+                    word.set(numdays);
                     context.write(word, one);
                 }
-            }
+
 
         }
     }

@@ -28,16 +28,16 @@ public class NGroup {
 
 
             String valueString = value.toString();
-            String group = valueString.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)")[4];
-            if (group == null) {
+            String grouparray[] = valueString.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
+            if (grouparray.length < 16) {
                 return;
             }
+            String nGroup = grouparray[4];
 
-
-            if(group.equals("neighbourhood_group")) {
+            if(nGroup.equals("neighbourhood_group")) {
                 return;
             }else {
-                word.set(group);
+                word.set(nGroup);
                 context.write(word, one);
             }
 
