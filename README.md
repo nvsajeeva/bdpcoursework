@@ -38,3 +38,54 @@ ls -ltr
 -rw-r--r-- 1 root root 1164675 Dec 18 21:53 listings.csv
 
 ```
+
+## Create directories in hdfs
+
+Create listing directory to store listings.csv
+
+```
+hdfs dfs -mkdir coursework
+hdfs dfs -mkdir coursework/listings/
+```
+Copy listings.csv
+
+```
+hdfs dfs -mkdir coursework/listings/
+```
+
+## Get the total number of rentals which are available 365 days a year
+
+```
+yarn jar bdpcoursework/target/bdp-coursework-1.0-SNAPSHOT.jar com.sajeeva.availability.AllDay coursework/listings /output/coursework/
+```
+## Check the results
+
+```
+bash-4.1# hdfs dfs -ls /output/coursework/
+
+Found 2 items
+-rw-r--r--   1 root supergroup          0 2019-12-18 22:27 /output/coursework/_SUCCESS
+-rw-r--r--   1 root supergroup          8 2019-12-18 22:27 /output/coursework/part-r-00000
+
+bash-4.1# hdfs dfs -cat /output/coursework/part-r-00000
+
+365	843
+```
+
+## Get the total number of rentals per neighbourhood group
+
+```
+hdfs dfs -rmr /output/coursework
+yarn jar bdpcoursework/target/bdp-coursework-1.0-SNAPSHOT.jar com.sajeeva.neighbourhood.NGroup coursework/listings /output/coursework/
+```
+
+## Check the results
+```
+bash-4.1# hdfs dfs -cat /output/coursework/part-r-00000
+
+Central Region	6299
+East Region	508
+North Region	203
+North-East Region	344
+West Region	539
+```
